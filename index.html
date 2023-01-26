@@ -1,110 +1,156 @@
 <!DOCTYPE html>
 <html lang="uk">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Студія</title>
-  </head>
-  <body>
-    <!--Шапка сторінки-->
-    <header>
-      <nav>
-        <p> WebStudio </p>
-        <!--Навігація на інші сторінки-->
-        <ul>
-          <li><a href="">Студія</a></li>
-          <li><a href="">Портфоліо</a></li>
-          <li><a href="">Контакти</a></li>
-        </ul>
-      </nav>
-        <!--Контакти-->
-        <ul>
-          <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
-    </header>
+    <title>Номер</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
 
-    <main>
-    <!--Герой-->
-    <section>
-      <h1>
-        Ефективні рішення для <br>
-        вашого бізнесу
-      </h1>
-      <button type="button">Замовити послугу</button>
-    </section>
+<!--Секція Герой на сторінці Кімната-->
+  <section class="room-hero">
+    
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <picture>
+            <source srcset="./images/room-hero-luxe-desktop.jpg 1x, ./images/room-hero-luxe-desktop@2x.jpg 2x" media="(min-width: 1280px)">
+            <source srcset="./images/room-hero-luxe-tablet.jpg 1x, ./images/room-hero-luxe-tablet@2x.jpg 2x" media="(min-width: 1024px)">
+            <img srcset="./images/room-hero-luxe-mobile.jpg 1x, ./images/room-hero-luxe-mobile@2x.jpg 2x" src="./images/room-hero-luxe-mobile.jpg" alt="Двомісний номер люкс">
+          </picture>
+        </div>
 
-    <!--Чим ми займаємося та переваги-->
-    <section>
-      <ul>
-        <li>
-          <h3>УВАГА ДО ДЕТАЛЕЙ</h3>
-          <p>
-            Ідейні міркування, і навіть початок повсякденної роботи з формування
-            позиції.
-          </p>
-        </li>
-        <li>
-          <h3>ПУНКТУАЛЬНІСТЬ</h3>
-          <p>
-            Завдання організації, особливо рамки і місце навчання кадрів тягне у
-            себе.
-          </p>
-        </li>
-        <li>
-          <h3>ПЛАНУВАННЯ</h3>
-          <p>Так само консультація з широким активом значною мірою зумовлює.</p>
-        </li>
-      </ul>
-      <h2>Чим ми займаємося</h2>
-      <ul>
-        <li><img src="./images/img.jpg" alt="Комп'ютер" width="370" height="294"></li>
-        <li><img src="./images/img-2-2.jpg" alt="Ноутбук" width="370" height="294"></li>
-        <li><img src="./images/img-3-2.jpg" alt="Планшет" width="370" height="294"></li>
-      </ul>
-    </section>
+        <div class="swiper-slide">
+          <picture>
+            <source srcset="./images/room-hero-interrior-desktop.jpg 1x, ./images/room-hero-interrior-desktop@2x.jpg 2x" media="(min-width: 1280px)">
+            <source srcset="./images/room-hero-interrior-tablet.jpg 1x, ./images/room-hero-interrior-tablet@2x.jpg 2x" media="(min-width: 1024px)">
+            <img srcset="./images/room-hero-interrior-mobile.jpg 1x, ./images/room-hero-interrior-mobile@2x.jpg 2x" src="./images/room-hero-interrior-mobile.jpg" alt="Вітальня двомісного номеру люкс">
+          </picture>
+        </div>
 
-    <!--Команда-->
-    <section>
-        <h2>Наша команда</h2>
-        <ul>
-            <li>
-                <img src="./images/img-4-2.jpg" alt="Ігор"
-                width="270" height="260">
-                <h3>Ігор Дем'яненко</h3>
-                <p>Product Designer</p>
-            </li>
-            <li>
-                <img src="./images/img-5-2.jpg" alt="Ольга"
-                width="270" height="260">
-                <h3>Ольга Рєпіна</h3>
-                <p>Frontend Developer</p>   
-            </li>
-            <li>
-                <img src="./images/img-6-2.jpg" alt="Миколай"
-                width="270" height="260">
-                <h3>Микола Тарасов</h3>
-                <p>Marketing</p>   
-            </li>
-            <li>
-                <img src="./images/img-7-2.jpg" alt="Михайло"
-                width="270" height="260">
-                <h3>Михайло Єрмаков</h3>
-                <p>UI Designer</p>   
-            </li>
-        </ul>
-    </section>
-    </main>
+        <div class="swiper-slide">
+          <picture>
+            <source srcset="./images/room-hero-badroom-desktop.jpg 1x, ./images/room-hero-badroom-desktop@2x.jpg 2x" media="(min-width: 1280px)">
+            <source srcset="./images/room-hero-badroom-tablet.jpg 1x, ./images/room-hero-badroom-tablet@2x.jpg 2x" media="(min-width: 1024px)">
+            <img srcset="./images/room-hero-badroom-mobile.jpg 1x, ./images/room-hero-badroom-mobile@2x.jpg 2x" src="./images/room-hero-badroom-mobile.jpg" alt="Ванна кімната двомісного номеру люкс">
+          </picture>
+        </div>
+      </div>
 
-    <!--Підвал сторінки-->
-    <footer>
-    <p> WebStudio </p>
-    <address>
-        м. Київ, пр-т Лесі Українки, 26 <br> info@devstudio.com <br> +38 096 111 11 11  
-    </address>
+      <div class="swiper-button-next">
+        <svg class="sbn-icon">
+          <use href="./images/icons.svg#clic-arrow-right"></use>
+        </svg>
+      </div>
+      <div class="swiper-button-prev">
+        <svg class="sbn-icon">
+          <use href="./images/icons.svg#clic-arrow-left"></use>
+        </svg>
+      </div>
+    </div>
 
-    </footer>
+    <div class="room-container">
+      <h1 class="room-hero-title">ДВОМІСНИЙ НОМЕР люкс</h1>
+      <p class="short-description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+      <div class="room-contacts">
+        <address class="address">
+            <svg class="address-point">
+              <use href="./images/icons.svg#icon-point"></use>
+            </svg>
+          <a href="https://goo.gl/maps/ATwjEWN8sphHWL9q6"
+          class="address-superscription"
+          target="_blank"
+          rel="noreferrer noopener nofollow">
+          Україна, м. Полтава,<br>ул. Маршала Бірюзова, 15</a>
+        </address>
 
-  </body>
-</html>
+        <ul class="tablet-social">
+          <li class="social-item">
+            <a class="network" href="https://www.instagram.com/" 
+            target="_blank"
+            rel="nofollow noopener noreferrer">
+              <svg class="social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a class="network" href="https://www.facebook.com/" 
+            target="_blank"
+            rel="nofollow noopener noreferrer">
+              <svg class="social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a class="network" href="https://telegram.org/"
+            target="_blank"
+            rel="nofollow noopener noreferrer">
+              <svg class="social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-telegram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul> 
+      </div>
+
+    <ul class="social">
+          <li class="social-item">
+            <a class="network" href="https://www.instagram.com/" 
+            target="_blank"
+            rel="nofollow noopener noreferrer">
+              <svg class="social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a class="network" href="https://www.facebook.com/" 
+            target="_blank"
+            rel="nofollow noopener noreferrer">
+              <svg class="social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a class="network" href="https://telegram.org/"
+            target="_blank"
+            rel="nofollow noopener noreferrer">
+              <svg class="social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-telegram"></use>
+              </svg>
+            </a>
+          </li>
+    </ul>        
+    
+      <!-- <button class="btn-room-modal-open" type="button">Переглянути ціни</button> -->
+    </div>
+
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+    var swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</body>

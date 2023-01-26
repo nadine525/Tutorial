@@ -1,0 +1,83 @@
+/* локальне підключення двох шрифтів, які використовуються в даній секції */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+        url('../fonts/montserrat-regular.woff2') format('woff2'),
+        url('../fonts/montserrat-regular.woff') format('woff'),
+        url('../fonts/montserrat-regular.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+        url('../fonts/montserrat-bold.woff2') format('woff2'),
+        url('../fonts/montserrat-bold.woff') format('woff'),
+        url('../fonts/montserrat-bold.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+        url('../fonts/times-new-roman-bold.woff2') format('woff2'),
+        url('../fonts/times-new-roman-bold.woff') format('woff'),
+        url('../fonts/times-new-roman-bold.ttf') format('ttf');
+}
+
+body {
+    background: #FFFDEE;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+/* Глобальне скидання стилів по тегам*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+ul,
+ol .link {
+    text-decoration: none;
+    color: currentColor;
+}
+
+li .list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    display: inline-block;
+}
+
+address {
+    font-style: normal;
+}

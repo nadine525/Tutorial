@@ -1,0 +1,303 @@
+/* локальне підключення двох шрифтів, які використовуються в даній секції */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+        url('../fonts/montserrat-regular.woff2') format('woff2'),
+        url('../fonts/montserrat-regular.woff') format('woff'),
+        url('../fonts/montserrat-regular.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+        url('../fonts/montserrat-bold.woff2') format('woff2'),
+        url('../fonts/montserrat-bold.woff') format('woff'),
+        url('../fonts/montserrat-bold.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+        url('../fonts/times-new-roman-bold.woff2') format('woff2'),
+        url('../fonts/times-new-roman-bold.woff') format('woff'),
+        url('../fonts/times-new-roman-bold.ttf') format('ttf');
+}
+
+body {
+    background: #FFFDEE;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+/* Глобальне скидання стилів по тегам*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+ ul, ol
+.link {
+    text-decoration: none;
+    color: currentColor;
+}
+
+li
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    display: inline-block;
+}
+
+address {
+    font-style: normal;
+}
+
+
+:root {
+    --black-color: #000000;
+    --bg-lemon-color: #FFFDEE;
+    --white-color: #FFFFFF;
+    --brown-color: #C79002;
+    --accent-yellow-color: #F3C653;
+    --gray-text-color: #7A7A7A;
+    --address-color: #E5E5E5;
+       
+}
+
+/* Стилі секції Герой на сторінці Кімната */
+
+.room-hero {
+position: relative
+
+}
+
+.room-container {
+    width: 1280px;
+    padding-left: 85px;
+    padding-right: 85px;
+    margin-left: auto;
+    margin-right: auto;
+
+    position: absolute;
+    top: 524px;
+
+    z-index: 20;
+}
+
+.room-container {
+    width: 1280px;
+    padding-left: 85px;
+    padding-right: 85px;
+    margin-left: auto;
+    margin-right: auto;
+
+    position: absolute;
+    top: 524px;
+
+    z-index: 20;
+}
+
+.room-hero-title {
+    margin-bottom: 24px;
+    
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.13;
+    letter-spacing: 0.05em;
+
+    color: var(--white-color);
+}
+
+.short-description {
+    margin-bottom: 24px;
+
+    width: 400px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+
+    color: var(--white-color);
+}
+
+.room-contacts {
+    display: flex;
+    align-items: baseline;
+    gap: 40px;
+
+}
+
+.address {
+    display: flex;
+    flex-direction: row;
+
+    border: 1px solid rgba(243, 198, 83, 0.7);
+    border-radius: 2px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.address-point {
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+    align-self: center;
+    fill: var(--accent-yellow-color);
+}
+
+.address-superscription {
+    text-decoration: none;
+
+    width: 233px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    
+    color: var(--address-color);
+}
+
+.social {
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.social-item {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    width: 24px;
+    height: 24px;
+}
+
+.social-icon {
+    fill: rgba(243, 198, 83, 0.7);
+}
+
+.btn-room-modal-open {
+    position: absolute;
+    right: 0;
+    /* top: 166px */
+
+    z-index: 999;
+    width: 236px;
+    padding: 14px 37px;
+    border: 1px solid var(--accent-yellow-color);
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+
+    font-family: 'Montserat';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    color: var(--white-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.btn-room-modal-open:hover,
+.btn-room-modal-open:focus {
+    color: var(--black-color);
+    background-color: var(--white-color);
+}
+
+
+
+
+
+/*  Слайдер стилі */
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.65);
+    cursor: pointer;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+}
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+    content: '';
+}
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+    content: '';
+}
+
+
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+    opacity: 1;
+}
+
+.sbn-icon {
+    align-items: center;
+    fill: var(--white-color);
+}
+
+.swiper-button-next:hover .sbn-icon {
+    fill: var(--accent-yellow-color);
+}
+
+.swiper-button-prev:hover .sbn-icon {
+    fill: var(--accent-yellow-color);
+}
+
